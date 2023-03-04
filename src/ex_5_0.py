@@ -2,8 +2,9 @@
 
 
 def line_count(infile):
-    pass
-
+    with open(infile,'r') as f:
+        a = len(f.readlines())
+        print(a)
 
 if __name__ == "__main__":
     # get the utility function for path discovery
